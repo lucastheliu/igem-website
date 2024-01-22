@@ -16,8 +16,8 @@ export default function Navbar() {
         <h1>iGEM LeRosey</h1>
       </div>
       <div>
-        {navigation.map((item) => (
-          <Link href={item.href} className="p-2 m-2">
+        {navigation.map((item, index) => (
+          <Link href={item.href} className="p-2 m-2" key={index}>
             {item.name}
           </Link>
         ))}
