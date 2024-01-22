@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +17,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <img src="https://picsum.photos/500/400?grayscale"></img>
+          <Image
+            src="https://picsum.photos/1000/800?grayscale"
+            width={1000}
+            height={800}
+            alt="Grayscale image"
+          />
         </div>
       </div>
       <article className="min-h-screen py-16">
